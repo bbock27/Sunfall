@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: d0a330434d1ca2f81a0b422ab345e238
+guid: 669c1e95254f8f0288325e273ff0815b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5168561784828952795
-    second: glass&wall_tiles_0
+      213: 1696444256322759255
+    second: glass&wall_tiles_normal_map_0
+  - first:
+      213: -1836431979313084236
+    second: glass&wall_tiles_normal_map_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,67 +116,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wall_sprite
+      name: glass&wall_tiles_normal_map_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 31
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+        x: 0
+        y: 30
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52f7c9fd0749548b0800000000000000
-      internalID: -5168561784828952795
+      spriteID: 75aae5f101bfa8710800000000000000
+      internalID: 1696444256322759255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glass&wall_tiles_0
+      name: glass&wall_tiles_normal_map_1
       rect:
         serializedVersion: 2
-        x: 43
-        y: 48
-        width: 5
-        height: 3
+        x: 30
+        y: 0
+        width: 34
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 97b2924e9046d819c91d5f782a7bd8bf
-      internalID: 1435056386
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass_sprite
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 1
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.75}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 949325656a2b50cab8fe555842863f31
-      internalID: -1742761880
+      spriteID: 4b840ea38dea386e0800000000000000
+      internalID: -1836431979313084236
       vertices: []
       indices: 
       edges: []
@@ -182,21 +163,18 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 806e19cddd1ef4e82b1619f2b4969f54
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: 669c1e95254f8f0288325e273ff0815b, type: 3}
-      name: _NormalMap
+    secondaryTextures: []
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      glass&wall_tiles_0: 1435056386
-      grass_sprite: -1742761880
-      wall_sprite: -5168561784828952795
+      glass&wall_tiles_normal_map_0: 1696444256322759255
+      glass&wall_tiles_normal_map_1: -1836431979313084236
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
