@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - map_boundaries
+  - sprites
   - 
   - 
   - 
@@ -41,3 +41,20 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: collisions_and_shadows
+    uniqueID: 205382471
+    locked: 0
+  - name: ground
+    uniqueID: 3350973873
+    locked: 0
+  - name: behind_sprite
+    uniqueID: 4069965661
+    locked: 0
+  - name: sprites
+    uniqueID: 1901313319
+    locked: 0
+  - name: infront_sprite
+    uniqueID: 490180201
+    locked: 0
+  m_RenderingLayers:
+  - Default
