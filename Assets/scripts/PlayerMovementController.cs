@@ -21,7 +21,7 @@ public class IsometricPlayerMovementController : MonoBehaviour
     
     IsometricCharacterRenderer isoRenderer;
 
-    Rigidbody2D rbody;
+    public Rigidbody2D rbody; 
 
     private void Awake()
     {
@@ -59,13 +59,11 @@ public class IsometricPlayerMovementController : MonoBehaviour
     {
         Vector2 input = playerInputActions.Player.Move.ReadValue<Vector2>(); //unit vector by default
         Vector2 currentPos = rbody.position;
-        //Debug.Log(input);
+        
 
         float speed;
         if (isDashing) { speed = dashSpeed; }
         else {speed = movementSpeed; }
-
-        Debug.Log("speed = " + speed);
 
         Vector2 movement = input * speed;
         Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
