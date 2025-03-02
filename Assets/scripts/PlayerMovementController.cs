@@ -6,10 +6,10 @@ using UnityEngine.InputSystem;
 public class IsometricPlayerMovementController : MonoBehaviour
 {
 
+    
     private float movementSpeed = 3.5f;
+
     private float dashSpeed = 15f;
-    private Vector2 dashDir = new Vector2 (0,0);
-    private int dashCounter = 0;
     private float dashTime = 0.2f; //amount of time (in seconds) spent going the increased speed when dash button (space) is pressed
     private float dashCooldown = 1f; //amount of time (seconds) before you can dash again
     private bool isDashing;
@@ -21,7 +21,7 @@ public class IsometricPlayerMovementController : MonoBehaviour
     
     IsometricCharacterRenderer isoRenderer;
 
-    public Rigidbody2D rbody; 
+    Rigidbody2D rbody;
 
     private void Awake()
     {
@@ -50,7 +50,6 @@ public class IsometricPlayerMovementController : MonoBehaviour
 
         if (isDashButtonPressed && canDash)
         {
-            if(dashCounter == 0) { dashDir = playerInputActions.Player.Move.ReadValue<Vector2>(); }
             StartCoroutine(Dash());
         }
         
@@ -60,16 +59,15 @@ public class IsometricPlayerMovementController : MonoBehaviour
     {
         Vector2 input = playerInputActions.Player.Move.ReadValue<Vector2>(); //unit vector by default
         Vector2 currentPos = rbody.position;
-    
-        Vector2 movement = new Vector2 (0,0);
-        
-        if (isDashing) 
-        { 
-            movement = dashDir * dashSpeed;
-            dashCounter++;
-        }
-        else { movement = input * movementSpeed; } //want to always update drection of movement for this one
+        //Debug.Log(input);
 
+        float speed;
+        if (isDashing) { speed = dashSpeed; }
+        else {speed = movementSpeed; }
+
+        Debug.Log("speed = " + speed);
+
+        Vector2 movement = input * speed;
         Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
         isoRenderer.SetDirection(movement);
         rbody.MovePosition(newPos);
@@ -80,13 +78,9 @@ public class IsometricPlayerMovementController : MonoBehaviour
         canDash = false;
         isDashing = true;
         tr.emitting = true;
-        playerInputActions.Player.Move.Disable();//so cant change dash direction
         yield return new WaitForSeconds(dashTime);
         isDashing = false;
         tr.emitting = false;
-        playerInputActions.Player.Move.Enable(); //end of dash, player can move again
-        dashDir = new Vector2 (0,-1);
-        dashCounter = 0;
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }

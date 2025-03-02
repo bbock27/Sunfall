@@ -8,36 +8,47 @@ public class EnemyMovement : MonoBehaviour
     public float movementSpeed = 1f;
     IsometricCharacterRenderer isoRenderer;
 
-    Rigidbody2D enemyRbody;
-    Rigidbody2D playerRbody; //player 
+    Rigidbody2D rbody;
     
     private Dictionary<Vector2Int, WalkableTile> searchableTiles;
 
     private void Awake()
     {
-        enemyRbody = GetComponent<Rigidbody2D>();
-        playerRbody = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>(); //player
+        rbody = GetComponent<Rigidbody2D>();
         isoRenderer = GetComponentInChildren<IsometricCharacterRenderer>();
     }
+
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector2 path = GetPath();
-        NavigatePath(path);
+        
+        GetPath();
+        NavigatePath();
+        
+        // Vector2 currentPos = rbody.position;
+        // float horizontalInput = Input.GetAxis("Horizontal");
+        // float verticalInput = Input.GetAxis("Vertical");
+        // Vector2 inputVector = new Vector2(horizontalInput, verticalInput);
+        // inputVector = Vector2.ClampMagnitude(inputVector, 1);
+        // Vector2 movement = inputVector * movementSpeed;
+        // Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
+        // isoRenderer.SetDirection(movement);
+        // rbody.MovePosition(newPos);
+    }
+    
+    
+    
+
+
+
+    void GetPath()
+    {
+        
     }
 
-    Vector2 GetPath()
+    void NavigatePath()
     {
-        Vector2 enemyPos = enemyRbody.position;
-        Vector2 direction = playerRbody.position - enemyPos;
-        direction.Normalize();
-        return enemyPos + direction * movementSpeed * Time.fixedDeltaTime; 
-    }
-
-    void NavigatePath(Vector2 path)
-    {
-        isoRenderer.SetDirection(path.normalized);
-        enemyRbody.MovePosition(path);
+        
     }
 }
