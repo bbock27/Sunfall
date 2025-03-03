@@ -65,7 +65,7 @@ public class IsometricPlayerMovementController : MonoBehaviour
         if (isDashing) { speed = dashSpeed; }
         else {speed = movementSpeed; }
 
-        Debug.Log("speed = " + speed);
+        // Debug.Log("speed = " + speed);
 
         Vector2 movement = input * speed;
         Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
