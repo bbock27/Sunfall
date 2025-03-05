@@ -51,4 +51,11 @@ public class EnemyMovement : MonoBehaviour
     {
         
     }
+
+    void OnTriggerEnter2D(Collider2D other){
+
+        if(other.GameObject.tag == "Player" && this.GameObject.tag == "Enemy") {
+            
+        }
+    }
 }
