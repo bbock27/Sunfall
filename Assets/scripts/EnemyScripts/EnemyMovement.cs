@@ -44,11 +44,13 @@ public class EnemyMovement : MonoBehaviour
 
     void GetPath()
     {
-        
     }
 
     void NavigatePath()
     {
-        
+    }
+
+    void OnTriggerEnter2D(Collider2D other){
+
     }
 }
