@@ -1,7 +1,11 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    
+    public GameObject sword;
     
     public GameObject shield;
 
@@ -46,9 +50,6 @@ public class PlayerAttack : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other){
-
-        if(this.GameObject.tag == "Player" && other.GameObject.tag == "Enemy"){
-            //do something lol
-        }
+        //TODO::make
     }
 }

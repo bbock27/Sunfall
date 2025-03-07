@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyCombat : MonoBehaviour
@@ -16,7 +18,7 @@ public class EnemyCombat : MonoBehaviour
     }
     
     void Awake() {
-        enemyHealth = gameObject.GetComponent<PlayerHealth>();
+        //enemyHealth = gameObject.GetComponent<PlayerHealth>();
     }
 
     void Start()
