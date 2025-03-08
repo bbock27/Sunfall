@@ -43,9 +43,9 @@ public class BaseEnemyBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(detectionTrigger.IsTouching(playerCollider)){
-            hasBeenDetected = true;
-        }
+        // if(detectionTrigger.IsTouching(playerCollider)){
+        //     hasBeenDetected = true;
+        // }
         
     }
 
@@ -70,7 +70,7 @@ public class BaseEnemyBehavior : MonoBehaviour
         Vector2 enemyPos = enemyRbody.position;
         Vector2 direction = playerRbody.position - enemyPos;
         direction.Normalize();
-        return enemyPos + direction * movementSpeed * Time.fixedDeltaTime; 
+        return enemyPos + direction * (movementSpeed * Time.fixedDeltaTime); 
     }
 
     //takes a vector as the path and moves the enemy rigidbody the amount specified by the vector
