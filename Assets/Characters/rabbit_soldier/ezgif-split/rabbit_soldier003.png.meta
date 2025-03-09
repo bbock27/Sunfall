@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rabbit_soldier003_0: 3663382530344851964
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
