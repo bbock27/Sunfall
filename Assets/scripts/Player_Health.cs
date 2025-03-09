@@ -46,12 +46,6 @@ public class Player_Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        elapsedTime += Time.deltaTime;
-        if (elapsedTime >= 1)
-        {
-            elapsedTime = 0;
-            TakeDamage(20);
-        }
 
         
         
