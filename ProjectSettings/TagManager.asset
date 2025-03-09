@@ -58,5 +58,8 @@ TagManager:
   - name: infront_sprite
     uniqueID: 490180201
     locked: 0
+  - name: UI
+    uniqueID: 2072047003
+    locked: 0
   m_RenderingLayers:
   - Default

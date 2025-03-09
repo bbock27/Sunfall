@@ -11,7 +11,7 @@ public class IsometricPlayerMovementController : MonoBehaviour
 
     private float dashSpeed = 15f;
     private float dashTime = 0.2f; //amount of time (in seconds) spent going the increased speed when dash button (space) is pressed
-    private float dashCooldown = 1f; //amount of time (seconds) before you can dash again
+    public float dashCooldown = 0.5f; //amount of time (seconds) before you can dash again
     private bool isDashing;
     private bool canDash = true; //in case we want to limit when dashing can happen (for example if character is dashing, cannot dash)
     private bool isDashButtonPressed;

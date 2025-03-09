@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      snow_02_iso_tile_road_512_08_0: -6217895256948923225
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      snow_02_iso_tile_water_256_06_0: -4736876788888872131
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

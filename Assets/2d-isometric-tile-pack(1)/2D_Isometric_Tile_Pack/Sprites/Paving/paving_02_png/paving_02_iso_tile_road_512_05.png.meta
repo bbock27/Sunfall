@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      paving_02_iso_tile_road_512_05_0: -5783723903114233337
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Isometric Dungeon Cover_0: 6615852066390971174
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

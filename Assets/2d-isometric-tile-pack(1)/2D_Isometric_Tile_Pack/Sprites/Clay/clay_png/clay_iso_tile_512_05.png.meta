@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      clay_iso_tile_512_05_0: 3293358463322433675
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
