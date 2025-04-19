@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class IsometricPlayerMovementController : MonoBehaviour
 {
 
     
-    private float movementSpeed = 3.5f;
+    public float movementSpeed = 3.5f;
 
     private float dashSpeed = 15f;
     private float dashTime = 0.2f; //amount of time (in seconds) spent going the increased speed when dash button (space) is pressed
@@ -16,6 +17,9 @@ public class IsometricPlayerMovementController : MonoBehaviour
     private bool canDash = true; //in case we want to limit when dashing can happen (for example if character is dashing, cannot dash)
     private bool isDashButtonPressed;
     private TrailRenderer tr;
+
+
+    public separate_animators_test animationController;
 
     private InputSystem_Actions playerInputActions;
     
@@ -55,6 +59,11 @@ public class IsometricPlayerMovementController : MonoBehaviour
         
     }
 
+    public void OnExit()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
     private void Movement()
     {
         Vector2 input = playerInputActions.Player.Move.ReadValue<Vector2>(); //unit vector by default
@@ -67,9 +76,31 @@ public class IsometricPlayerMovementController : MonoBehaviour
 
         // Debug.Log("speed = " + speed);
 
+        
+
         Vector2 movement = input * speed;
         Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
-        isoRenderer.SetDirection(movement);
+        
+        if (animationController != null)
+        {
+            if (movement.magnitude > 0.1f)
+            {
+                if (!animationController.walking)
+                {
+                    animationController.StartedWalking();
+                }
+            }
+            else
+            {
+                if (animationController.walking)
+                {
+                    animationController.StoppedWalking();
+                }
+            }
+        }
+        
+        if(isoRenderer != null)
+            isoRenderer.SetDirection(movement);
         rbody.MovePosition(newPos);
     }
 

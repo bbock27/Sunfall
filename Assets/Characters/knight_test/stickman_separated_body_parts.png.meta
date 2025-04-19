@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 0ca510b025075fc72a9793786272d37c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1158120709510469759
+    second: stickman_separated_body_parts_0
+  - first:
+      213: -2329023612878831708
+    second: stickman_separated_body_parts_1
+  - first:
+      213: 5395084377509694729
+    second: stickman_separated_body_parts_2
+  - first:
+      213: -4141189957642322830
+    second: stickman_separated_body_parts_3
+  - first:
+      213: -5598058261357967070
+    second: stickman_separated_body_parts_4
+  - first:
+      213: 4556556569228870744
+    second: stickman_separated_body_parts_5
+  - first:
+      213: 5186889342755142528
+    second: stickman_separated_body_parts_6
+  - first:
+      213: 9053247574227749775
+    second: stickman_separated_body_parts_7
+  - first:
+      213: -5816875497693205347
+    second: stickman_separated_body_parts_8
+  - first:
+      213: -191434989183065618
+    second: stickman_separated_body_parts_9
+  - first:
+      213: -5986809454180631374
+    second: stickman_separated_body_parts_10
+  - first:
+      213: -6764023695483551813
+    second: stickman_separated_body_parts_11
+  - first:
+      213: -7333680551050557356
+    second: stickman_separated_body_parts_12
+  - first:
+      213: 2009629234069528682
+    second: stickman_separated_body_parts_13
+  - first:
+      213: -685254117799926455
+    second: stickman_separated_body_parts_14
+  - first:
+      213: -4026621187187758208
+    second: stickman_separated_body_parts_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stickman_separated_body_parts_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 204
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187ea96c9578defe0800000000000000
+      internalID: -1158120709510469759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stickman_separated_body_parts_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 204
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af3cd02d55adafd0800000000000000
+      internalID: -2329023612878831708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stickman_separated_body_parts_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 204
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d89be28a03fda40800000000000000
+      internalID: 5395084377509694729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stickman_separated_body_parts_3
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 204
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c705baca98786c0800000000000000
+      internalID: -4141189957642322830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stickman_separated_body_parts_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 128
+        width: 28
+        height: 15
+      alignment: 9
+      pivot: {x: 0.54813755, y: 0.91933286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22941dbcba3bf42b0800000000000000
+      internalID: -5598058261357967070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stickman_separated_body_parts_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 129
+        width: 39
+        height: 18
+      alignment: 9
+      pivot: {x: 0.42105278, y: 0.69723344}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8540cdbde042c3f30800000000000000
+      internalID: 4556556569228870744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stickman_separated_body_parts_6
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 127
+        width: 44
+        height: 16
+      alignment: 9
+      pivot: {x: 0.3659415, y: 0.8993826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08bfd2c30688bf740800000000000000
+      internalID: 5186889342755142528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stickman_separated_body_parts_7
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 129
+        width: 16
+        height: 14
+      alignment: 9
+      pivot: {x: 0.123659134, y: 0.8774392}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b038dd3b893ad70800000000000000
+      internalID: 9053247574227749775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stickman_separated_body_parts_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 85
+        width: 38
+        height: 15
+      alignment: 9
+      pivot: {x: 0.45149195, y: 0.8932393}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ca251dd8e464fa0800000000000000
+      internalID: -5816875497693205347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stickman_separated_body_parts_9
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 89
+        width: 30
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5163849, y: 0.889143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee1a92044e2e75df0800000000000000
+      internalID: -191434989183065618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stickman_separated_body_parts_10
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 85
+        width: 38
+        height: 16
+      alignment: 9
+      pivot: {x: 0.45472598, y: 0.89938307}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bcfc9955849aeca0800000000000000
+      internalID: -5986809454180631374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stickman_separated_body_parts_11
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 90
+        width: 26
+        height: 14
+      alignment: 9
+      pivot: {x: 0.37238663, y: 0.8686616}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbfb06a494c5122a0800000000000000
+      internalID: -6764023695483551813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stickman_separated_body_parts_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 38
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 458c072f468893a90800000000000000
+      internalID: -7333680551050557356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stickman_separated_body_parts_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 39
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6064f21423a3eb10800000000000000
+      internalID: 2009629234069528682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stickman_separated_body_parts_14
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94569afa20d7d76f0800000000000000
+      internalID: -685254117799926455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stickman_separated_body_parts_15
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 28
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08bac9c3d519e18c0800000000000000
+      internalID: -4026621187187758208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5c3d541bc2dc239c89e685f705389ee5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      stickman_separated_body_parts_0: -1158120709510469759
+      stickman_separated_body_parts_1: -2329023612878831708
+      stickman_separated_body_parts_10: -5986809454180631374
+      stickman_separated_body_parts_11: -6764023695483551813
+      stickman_separated_body_parts_12: -7333680551050557356
+      stickman_separated_body_parts_13: 2009629234069528682
+      stickman_separated_body_parts_14: -685254117799926455
+      stickman_separated_body_parts_15: -4026621187187758208
+      stickman_separated_body_parts_2: 5395084377509694729
+      stickman_separated_body_parts_3: -4141189957642322830
+      stickman_separated_body_parts_4: -5598058261357967070
+      stickman_separated_body_parts_5: 4556556569228870744
+      stickman_separated_body_parts_6: 5186889342755142528
+      stickman_separated_body_parts_7: 9053247574227749775
+      stickman_separated_body_parts_8: -5816875497693205347
+      stickman_separated_body_parts_9: -191434989183065618
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

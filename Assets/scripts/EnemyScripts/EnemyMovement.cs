@@ -7,24 +7,31 @@ public class EnemyMovement : MonoBehaviour
     
     public float movementSpeed = 1f;
     public float detectionRange = 3f; //how close the player must be for the enemy to see and start to follow them
-    IsometricCharacterRenderer isoRenderer;
+    IsometricEnemyRenderer isoRenderer;
 
     Rigidbody2D enemyRbody;
     Rigidbody2D playerRbody; //player 
     
     private Dictionary<Vector2Int, WalkableTile> searchableTiles;
 
-    CapsuleCollider2D playerCollider;
+    BoxCollider2D playerCollider;
+    private BoxCollider2D enemyHitbox;
     CircleCollider2D detectionTrigger;
+    Player_Health playerHealth;
     public bool hasBeenDetected = false;
+    public bool inRange = false;
+    float elapsedTime = 0f;
 
     private void Awake()
     {
         enemyRbody = GetComponent<Rigidbody2D>();
         playerRbody = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>(); //player
-        isoRenderer = GetComponentInChildren<IsometricCharacterRenderer>();
+        isoRenderer = GetComponentInChildren<IsometricEnemyRenderer>();
 
-        playerCollider = GameObject.FindWithTag("Player").GetComponentInChildren<CapsuleCollider2D>();
+        playerCollider = GameObject.FindWithTag("Player").GetComponentInChildren<BoxCollider2D>();
+        enemyHitbox = GetComponent<BoxCollider2D>();
+        
+        playerHealth = GameObject.FindWithTag("Player").GetComponent<Player_Health>();
 
         //trigger for detection radius
         detectionTrigger = GetComponent<CircleCollider2D>();
@@ -35,6 +42,7 @@ public class EnemyMovement : MonoBehaviour
     void FixedUpdate()
     {
         if(hasBeenDetected){
+            
             Vector2 path = GetPath();
             NavigatePath(path);
         }
@@ -44,19 +52,47 @@ public class EnemyMovement : MonoBehaviour
         if(detectionTrigger.IsTouching(playerCollider)){
             hasBeenDetected = true;
         }
+        else
+        {
+            hasBeenDetected = false;
+        }
+
+        if (enemyHitbox.IsTouching(playerCollider))
+        {
+            inRange = true;
+        }
+        else
+        {
+            inRange = false;
+        }
+
+        if (inRange && elapsedTime > 2)
+        {
+            elapsedTime = 0f;
+            playerHealth.TakeDamage(10);
+        }
+        else
+        {
+            elapsedTime += Time.deltaTime;
+        }
     }
 
     Vector2 GetPath()
     {
+        if (inRange)
+        {
+            isoRenderer.SetDirection(new Vector2(0, 0));
+            return enemyRbody.position;
+        }
         Vector2 enemyPos = enemyRbody.position;
         Vector2 direction = playerRbody.position - enemyPos;
         direction.Normalize();
-        return enemyPos + direction * movementSpeed * Time.fixedDeltaTime; 
+        isoRenderer.SetDirection(direction);
+        return enemyPos + direction * (movementSpeed * Time.fixedDeltaTime); 
     }
 
     void NavigatePath(Vector2 path)
     {
-        isoRenderer.SetDirection(path.normalized);
         enemyRbody.MovePosition(path);
     }
 

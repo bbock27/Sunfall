@@ -12,7 +12,7 @@ public class BaseEnemyBehavior : MonoBehaviour
 
     Rigidbody2D enemyRbody;
     Rigidbody2D playerRbody; //player 
-    CapsuleCollider2D playerCollider;
+    BoxCollider2D playerCollider;
     CircleCollider2D detectionTrigger;
     
     //private Dictionary<Vector2Int, WalkableTile> searchableTiles;
@@ -31,7 +31,7 @@ public class BaseEnemyBehavior : MonoBehaviour
         playerRbody = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>(); //player
         isoRenderer = GetComponentInChildren<IsometricCharacterRenderer>();  
 
-        playerCollider = GameObject.FindWithTag("Player").GetComponentInChildren<CapsuleCollider2D>();
+        playerCollider = GameObject.FindWithTag("Player").GetComponentInChildren<BoxCollider2D>();
 
         //trigger for detection radius
         detectionTrigger = GetComponent<CircleCollider2D>();
